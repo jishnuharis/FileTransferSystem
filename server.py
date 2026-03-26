@@ -64,7 +64,7 @@ def handle_client(conn, addr):
 
 def main():
     host = "0.0.0.0"
-    port = int(os.environ.get("PORT", 5555))
+    port = int(os.environ.get("PORT", 9000))
 
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((host, port))
